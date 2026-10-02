@@ -1,36 +1,36 @@
 {
   "ready": true,
   "bundle": {
-    "vaultAddress": "0xc2b4fc5f41dcc2f3924fb41ae64b604626a934b9",
-    "employerAddress": "0x7f9924bDc53Db7C206DF36437d6058c0C098d798",
-    "callerAddress": "0xCC437f120e2c48B167278727D3bBD567696a6bc5",
-    "workerAddress": "0xf861d698132c5DC05C684293710CB3e98D25dcFf",
+    "vaultAddress": "0xfc6915ecd36a44a92d0f019d296b63be97abb21f",
+    "employerAddress": "0x703C160a44990E90b6b57942cDebA9dF2D2759B1",
+    "callerAddress": "0x6b4d45E10Eb5F61a16f9Cc24120e19caB0522547",
+    "workerAddress": "0x7bcd942B528cf4b1aC2d8EeBd87a80f61B70068E",
     "tokenAddress": "0x20c0000000000000000000000000000000000000",
-    "depositHash": "0xc59451f8fb75652110b56a3d1631c067053f131c3c7e73fb79438d56533c2ac1",
-    "deploymentHash": "0x6eacf9ce1aef3b719d7eaac2b98d4ac04beed334a6ced5c2d3a3515b9df85aeb",
-    "deploymentBlock": "37867529",
-    "preparedAt": "2026-10-02T16:00:02.107Z"
+    "depositHash": "0x2ce44c670f553ff78bf863509c39a4bc5d99aa46c8d72e88a0190fea4700fd16",
+    "deploymentHash": "0x75237394877d82e00684a0bdda20da6d524106e6d849bf49f015998ecad29c67",
+    "deploymentBlock": "37892158",
+    "preparedAt": "2026-10-02T20:07:42.454Z"
   },
   "native": {
     "network": "Tempo Moderato",
     "chainId": 42431,
     "status": "live",
-    "checkedAt": "2026-10-02T16:42:57.098Z",
-    "blockNumber": "37871828",
+    "checkedAt": "2026-10-02T20:08:04.464Z",
+    "blockNumber": "37892204",
     "executor": "managed-test-wallet",
-    "employerAddress": "0x7f9924bDc53Db7C206DF36437d6058c0C098d798",
-    "callerAddress": "0xCC437f120e2c48B167278727D3bBD567696a6bc5"
+    "employerAddress": "0x703C160a44990E90b6b57942cDebA9dF2D2759B1",
+    "callerAddress": "0x6b4d45E10Eb5F61a16f9Cc24120e19caB0522547"
   },
   "vault": {
     "id": "native_tempo",
     "rail": "tempo",
     "asset": "pathUSD",
     "decimals": 6,
-    "address": "0xc2b4fc5f41dcc2f3924fb41ae64b604626a934b9",
-    "balance": "19993500000",
-    "committed": "300000000",
+    "address": "0xfc6915ecd36a44a92d0f019d296b63be97abb21f",
+    "balance": "20000000000",
+    "committed": "0",
     "buffer": "200000000",
-    "surplus": "19493500000",
+    "surplus": "19800000000",
     "strategyPrincipal": "0",
     "strategyValue": "0",
     "riskMode": "normal",
@@ -38,9 +38,9 @@
     "settlementAvailable": true
   },
   "executorTestBalances": {
-    "employer": "979999992229",
-    "caller": "999999999684"
+    "employer": "979999994767",
+    "caller": "1000000000000"
   },
   "pendingTransactions": [],
-  "checkedAt": "2026-10-02T16:42:58.206Z"
+  "checkedAt": "2026-10-02T20:08:05.474Z"
 }
