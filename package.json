@@ -1,0 +1,56 @@
+{
+  "name": "soleil",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "dev": "tsx scripts/dev.ts",
+    "dev:server": "tsx watch server/index.ts",
+    "dev:web": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build && tsc -p tsconfig.server.json",
+    "start": "node --use-env-proxy --env-file-if-exists=.env dist-server/server/index.js",
+    "test": "vitest run",
+    "test:e2e": "npm run build && playwright test --grep-invert @network",
+    "check": "npm run build && npm test",
+    "contracts:compile": "tsx scripts/compile-contracts.ts",
+    "test:testnet": "node --use-env-proxy --import tsx scripts/testnet-proof.ts",
+    "solana:proof": "tsx programs/soleil/prove-local.ts",
+    "solana:proof:check": "tsc --ignoreConfig --noEmit --target ES2022 --module NodeNext --moduleResolution NodeNext --strict --skipLibCheck programs/soleil/prove-local.ts",
+    "test:e2e:native": "npm run build && playwright test --grep @network",
+    "test:e2e:all": "npm run build && playwright test",
+    "presentation:prepare": "node --use-env-proxy --env-file-if-exists=.env --import tsx scripts/prepare-presentation.ts",
+    "presentation:check": "node --use-env-proxy --env-file-if-exists=.env --import tsx scripts/presentation-check.ts",
+    "test:presentation": "npm run build && playwright test --config playwright.presentation.config.ts",
+    "solana:adapter-check": "tsx programs/soleil/adapter-check.ts"
+  },
+  "dependencies": {
+    "@solana/kit": "8.4.0",
+    "express": "5.2.1",
+    "lucide-react": "1.49.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-router-dom": "7.18.4",
+    "viem": "2.57.2",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/express": "5.0.6",
+    "@types/node": "26.6.4",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.1",
+    "hardhat": "3.18.1",
+    "solc": "0.8.36",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vite": "8.3.2",
+    "vitest": "5.0.3"
+  },
+  "overrides": {
+    "tmp": "0.2.7"
+  }
+}

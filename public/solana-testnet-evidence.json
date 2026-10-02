@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "1",
+  "mode": "local-validator",
+  "cluster": "localnet",
+  "rpcUrl": "http://127.0.0.1:19099",
+  "statement": "Actual compiled SBF program executed on an isolated local Solana validator. These are local test tokens, not devnet, mainnet, USDC or production funds. No real yield or bridge.",
+  "verifiedAt": "2026-10-02T11:13:44.038Z",
+  "programId": "7hSDwob28P159bXHhAQrampnvqX8DjaXjSQMKe3bktc3",
+  "programLoading": "genesis SBF with upgrades disabled",
+  "programSha256": "7f052c5b577b0f9f1b92abb6245d43625e066351852d2bc3cb312f71cfacbf36",
+  "mint": "8J2md9EArRxucuJ7rDgipC73rFCBw9MiL3wBd1mgVMJp",
+  "decimals": 6,
+  "employer": "ERbi6X7oZVKmw4F5dnBtoWZX8o6koLtwZEmshJNB2GNR",
+  "independentCaller": "H4LrokynjjEeedMaU5NKLJzX4o2vn8RJ15SYeuQ1jCHx",
+  "workerA": "49rmEoWbNQu3tTvvmwL9UrS2uvBrDjNJNhSsscYWME9M",
+  "workerB": "34BtSNkW6Ygj7MdBEC9Zh3aiyyJDz2Xephyuv6FGGuRw",
+  "vault": "HyEL24PZgMwgqhRf8tEvqZmWxGyxfSpbZktK4p3qTmqS",
+  "vaultTokenAccount": "3QNKjJkJ9stUe8P5LwHP1RXYLuchoRq6BG9PvrtpQ2ba",
+  "paymentIds": [
+    "6fc1fcc0c3bfbf26ca54378812e6ee3ba0b0af3950f0dc4af2eb5412acce96f8",
+    "1af0b1730d5fee438e76d37c49396eb870c4f9f20f22e81e291ba3e455e234a3"
+  ],
+  "final": {
+    "liquid": "0",
+    "committed": "0",
+    "retired": true,
+    "workerAReceived": "100000000",
+    "workerBReceived": "150000000",
+    "companyRecovered": "750000000"
+  },
+  "checks": [
+    {
+      "label": "actual SBF program is executable on local validator",
+      "passed": true
+    },
+    {
+      "label": "deposit holds real local classic token balance",
+      "passed": true
+    },
+    {
+      "label": "on-chain P equals both committed amounts",
+      "passed": true
+    },
+    {
+      "label": "withdrawal cannot drain principal and buffer rejects",
+      "passed": true
+    },
+    {
+      "label": "withdrawal cannot drain principal and buffer has the expected program error 6007",
+      "passed": true
+    },
+    {
+      "label": "atomic batch denied by frozen second worker rejects",
+      "passed": true
+    },
+    {
+      "label": "atomic batch denied by frozen second worker has the expected program error 6003",
+      "passed": true
+    },
+    {
+      "label": "actual SBF batch rollback restores the first token transfer",
+      "passed": true
+    },
+    {
+      "label": "batch rollback restores P and paid tombstone",
+      "passed": true
+    },
+    {
+      "label": "permissionless claim has exact fixed worker delivery",
+      "passed": true
+    },
+    {
+      "label": "successful payment updates real liability and paid state",
+      "passed": true
+    },
+    {
+      "label": "paid claim cannot replay rejects",
+      "passed": true
+    },
+    {
+      "label": "paid claim cannot replay has the expected program error 6009",
+      "passed": true
+    },
+    {
+      "label": "paid ID cannot be recommitted rejects",
+      "passed": true
+    },
+    {
+      "label": "paid ID cannot be recommitted has the expected program error 6006",
+      "passed": true
+    },
+    {
+      "label": "cannot retire with outstanding liability rejects",
+      "passed": true
+    },
+    {
+      "label": "cannot retire with outstanding liability has the expected program error 6012",
+      "passed": true
+    },
+    {
+      "label": "all committed principal is paid exactly once",
+      "passed": true
+    },
+    {
+      "label": "retirement permanently blocks new commitments rejects",
+      "passed": true
+    },
+    {
+      "label": "retirement permanently blocks new commitments has the expected program error 6005",
+      "passed": true
+    },
+    {
+      "label": "retirement recovers company buffer and leaves no token dust",
+      "passed": true
+    }
+  ],
+  "transactions": [
+    {
+      "label": "local faucet ERbi6X7oZVKmw4F5dnBtoWZX8o6koLtwZEmshJNB2GNR",
+      "signature": "c4SdEPzXM1tZj94vNoPeFHF9er1CYwV67fSw2Qb2RQYjz2j9MedqRXAMDqihMR963yKVYiUoyTeb4eCzPieBD97"
+    },
+    {
+      "label": "local faucet H4LrokynjjEeedMaU5NKLJzX4o2vn8RJ15SYeuQ1jCHx",
+      "signature": "4Prz4EMYTXtyhpNAWRTS4ptngPS1F5d7WNyZM7tG6DxFWrfp9PWmykns5Vr9RAWPkchi1xsdZZfAQyMxP7YYdsVw"
+    },
+    {
+      "label": "fresh classic test mint and dust prefunding",
+      "signature": "2AmgMJTkfwR4MLKrpXqni3scu1HK3ruks6zZNFaWxVF4SeQzP4dv1EWkYimiVFP5Qz8pXwztRXcNTZkb3eTMx1SE"
+    },
+    {
+      "label": "initialize actual PDA vault and canonical token PDA",
+      "signature": "2ryXb4vG7XchcYA98QTjenLnCbBMUH1gF4e7BDqoG3T4L4VeG6H3GyWAuWvWTiERWgWJftv6fUMLqbubgkRD4G7Q"
+    },
+    {
+      "label": "deposit exact classic-token principal",
+      "signature": "2iAyXGx4iCHSXbyTLVRVWYBcAGTheJjX5bWgaTb6fnJCntbE2SEuhJTF8BNRzrtw56RSd2fi3VJ2ewNijNzjorVc"
+    },
+    {
+      "label": "commit two immutable invoices with buffered reserve",
+      "signature": "4PLwpVDTJje7FaEqcfpeUvSFxudfnJ9fasM7AAzUNykBbW2yGWaHEZJZEvzn99aANWkRcKW4LgdfiZBFYHi8m5PL"
+    },
+    {
+      "label": "issuer freezes second worker in local test mint",
+      "signature": "4PzhFgzxkZkbLuaw7YRGXKvxW6VjQvkMtq1J7u19eYXToujCT2bMq3yN5e2XYQPXxudngbdBBi43bFBHHXtp9EjW"
+    },
+    {
+      "label": "independent caller settles first fixed worker",
+      "signature": "38PWemRQjem2u98qmddpPpeNXR57qyJprbUAqFBdoY3ikMUshJ3oH9j7GVA7x55841ajQWsesqhaCQLpmpfsb81R"
+    },
+    {
+      "label": "issuer thaws worker and independent caller settles second invoice",
+      "signature": "2ykMzrsu9JBuYcqA5RzFSBtBZhm7WFcGpXRizUDqP2iZKvsJwdxpZ7hCyzJ5KoeKEaW7wZpHaQF3hiPkyCR16EHA"
+    },
+    {
+      "label": "independent caller pays thawed fixed worker",
+      "signature": "2Agdi8ic3QNYWBDmcFyVy8fJFKYvn2Bnjuj1tNjXf3r25NZT6LojmSY2c5LwUvjkmkgLoKsvxYo37MDau98Zo4Jr"
+    },
+    {
+      "label": "retire without deleting consumed claims",
+      "signature": "4JAXCdEz8qVMrLPrtQ7E7Xi4jRMWUggBhySnYMSE4xNj169ZRYAi1EqK2u9yjy5joi1fZF9NFg1r9zSSBjBX5spR"
+    },
+    {
+      "label": "recover full uncommitted balance including released buffer",
+      "signature": "5hnnbXrwoUpYJm1QKsa7c5RqSMfA7PU7bHq84SdxFSJjNWKris3A8UUiAnX43BnqgtM7wiPKK5ocgrGfa6dovpEQ"
+    }
+  ],
+  "devnet": {
+    "deployed": false,
+    "reason": "Official devnet faucet rate-limited fresh isolated deployment signer for two-SOL and one-SOL requests."
+  }
+}

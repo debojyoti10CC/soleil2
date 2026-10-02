@@ -1,0 +1,46 @@
+{
+  "ready": true,
+  "bundle": {
+    "vaultAddress": "0xc2b4fc5f41dcc2f3924fb41ae64b604626a934b9",
+    "employerAddress": "0x7f9924bDc53Db7C206DF36437d6058c0C098d798",
+    "callerAddress": "0xCC437f120e2c48B167278727D3bBD567696a6bc5",
+    "workerAddress": "0xf861d698132c5DC05C684293710CB3e98D25dcFf",
+    "tokenAddress": "0x20c0000000000000000000000000000000000000",
+    "depositHash": "0xc59451f8fb75652110b56a3d1631c067053f131c3c7e73fb79438d56533c2ac1",
+    "deploymentHash": "0x6eacf9ce1aef3b719d7eaac2b98d4ac04beed334a6ced5c2d3a3515b9df85aeb",
+    "deploymentBlock": "37867529",
+    "preparedAt": "2026-10-02T16:00:02.107Z"
+  },
+  "native": {
+    "network": "Tempo Moderato",
+    "chainId": 42431,
+    "status": "live",
+    "checkedAt": "2026-10-02T16:28:59.440Z",
+    "blockNumber": "37870430",
+    "executor": "managed-test-wallet",
+    "employerAddress": "0x7f9924bDc53Db7C206DF36437d6058c0C098d798",
+    "callerAddress": "0xCC437f120e2c48B167278727D3bBD567696a6bc5"
+  },
+  "vault": {
+    "id": "native_tempo",
+    "rail": "tempo",
+    "asset": "pathUSD",
+    "decimals": 6,
+    "address": "0xc2b4fc5f41dcc2f3924fb41ae64b604626a934b9",
+    "balance": "19996750000",
+    "committed": "0",
+    "buffer": "200000000",
+    "surplus": "19796750000",
+    "strategyPrincipal": "0",
+    "strategyValue": "0",
+    "riskMode": "normal",
+    "retired": false,
+    "settlementAvailable": true
+  },
+  "executorTestBalances": {
+    "employer": "979999993669",
+    "caller": "999999999766"
+  },
+  "pendingTransactions": [],
+  "checkedAt": "2026-10-02T16:29:00.444Z"
+}

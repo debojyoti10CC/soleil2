@@ -1,0 +1,17 @@
+[package]
+name = "soleil-vault"
+version = "0.1.0"
+edition = "2021"
+publish = false
+[lib]
+crate-type = ["cdylib", "rlib"]
+[features]
+default = []
+no-entrypoint = []
+[dependencies]
+solana-program = "2.3.0"
+spl-token = { version = "8.0.0", features = ["no-entrypoint"] }
+[profile.release]
+overflow-checks = true
+lto = "fat"
+codegen-units = 1

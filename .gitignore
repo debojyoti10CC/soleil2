@@ -1,0 +1,16 @@
+node_modules/
+dist/
+dist-server/
+data/
+.env
+.env.*
+!.env.example
+test-results/
+playwright-report/
+artifacts/
+programs/**/target/
+*.log
+.runtime/
+*.wallet
+master.dpapi
+master.key

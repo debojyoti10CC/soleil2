@@ -1,0 +1,8 @@
+* text=auto
+*.sh text eol=lf
+# Preserve compiler input bytes exactly: Solidity metadata is part of deployed runtime.
+*.sol -text diff
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+*.so binary
+*.png binary
