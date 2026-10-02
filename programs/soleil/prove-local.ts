@@ -161,7 +161,7 @@ export async function proveLocalSbf() {
     paymentIds: [Buffer.from(paymentA).toString('hex'), Buffer.from(paymentB).toString('hex')],
     final: { liquid: '0', committed: '0', retired: true, workerAReceived: '100000000', workerBReceived: '150000000', companyRecovered: '750000000' },
     checks, transactions: records,
-    devnet: { deployed: false, reason: 'Official devnet faucet rate-limited fresh isolated deployment signer for two-SOL and one-SOL requests.' },
+    devnet: { deployed: false, reason: 'Official devnet faucet requests failed for the fresh isolated deployment signer; the CLI reported possible rate limits. No public deployment occurred.' },
   };
   fs.mkdirSync(path.join(root, 'public'), { recursive: true });
   fs.writeFileSync(path.join(root, 'public/solana-testnet-evidence.json'), JSON.stringify(evidence, null, 2) + '\n');

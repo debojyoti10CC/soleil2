@@ -23,7 +23,7 @@ Use **Stop Soleil.cmd** to stop the launcher-managed server. SQLite application 
 
 1. Choose **Worker presentation**, then acknowledge the managed test recipient if it is unconfirmed. A real signature from its assigned generated key is verified; the interface explains that the local server holds this test key.
 2. Choose **Employer presentation** in another browser profile. Inspect the live chain timestamp, actual liquid balance, committed principal and protected buffer.
-3. Approve an earned-work invoice and commit it. The contract reserves its exact amount and fixes its recipient and due time. The prepared invoice is already approved and due.
+3. Approve an earned-work invoice and commit it. The contract reserves its exact amount and fixes its recipient and due time. On this prepared computer, the original 300 pathUSD invoice is already committed and due; it can be claimed immediately. Fresh preparation seeds it as approved so you can demonstrate commitment first.
 4. In the worker portal, refresh and claim the matured payment. A different, pre-funded caller sends the actual transaction; the employer signature is not used. Keep the independent verifier link as another way to inspect the entitlement.
 5. Inspect/download the testnet receipt and open the transaction in the Tempo explorer. Repeating a paid claim cannot transfer funds twice. Create another invoice to rehearse again; native commitments cannot be reset or cancelled.
 
@@ -43,7 +43,7 @@ Before every presentation, run `npm run presentation:check`. It verifies the dep
 | Solana program | Compiled native SBF vault, real local-validator token transfers, canonical native client adapter; public devnet deployment remains unfunded |
 | Accounting simulation | Explicit offline accounting/risk exercise, including strategy loss/delay; no blockchain claims |
 
-Soleil's public Solana deployment has not completed: the fresh deployer lacks devnet SOL and official faucet requests were rate-limited. The recorded Solana proof is an actual **local validator** execution. It is not public devnet evidence. See `docs/CHAIN-CONTRACTS.md`.
+Soleil's public Solana deployment has not completed: the fresh deployer lacks devnet SOL and official faucet requests failed with a generic possible-rate-limit message. The recorded Solana proof is an actual **local validator** execution. It is not public devnet evidence. See `docs/CHAIN-CONTRACTS.md`.
 
 Company formation is a provider handoff. A link does not form an entity, approve KYB, open a bank account or enable cashout. Live fiat payouts and yield strategies need approved integrations. The presentation vault has **no strategy**; it never reports simulated yield. Mainnet or real-money use requires an independent contract and operational review.
 

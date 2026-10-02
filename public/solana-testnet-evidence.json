@@ -166,6 +166,6 @@
   ],
   "devnet": {
     "deployed": false,
-    "reason": "Official devnet faucet rate-limited fresh isolated deployment signer for two-SOL and one-SOL requests."
+    "reason": "Official devnet faucet requests failed for the fresh isolated deployment signer; the CLI reported possible rate limits. No public deployment occurred."
   }
 }

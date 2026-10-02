@@ -15,8 +15,8 @@
     "network": "Tempo Moderato",
     "chainId": 42431,
     "status": "live",
-    "checkedAt": "2026-10-02T16:28:59.440Z",
-    "blockNumber": "37870430",
+    "checkedAt": "2026-10-02T16:42:57.098Z",
+    "blockNumber": "37871828",
     "executor": "managed-test-wallet",
     "employerAddress": "0x7f9924bDc53Db7C206DF36437d6058c0C098d798",
     "callerAddress": "0xCC437f120e2c48B167278727D3bBD567696a6bc5"
@@ -27,10 +27,10 @@
     "asset": "pathUSD",
     "decimals": 6,
     "address": "0xc2b4fc5f41dcc2f3924fb41ae64b604626a934b9",
-    "balance": "19996750000",
-    "committed": "0",
+    "balance": "19993500000",
+    "committed": "300000000",
     "buffer": "200000000",
-    "surplus": "19796750000",
+    "surplus": "19493500000",
     "strategyPrincipal": "0",
     "strategyValue": "0",
     "riskMode": "normal",
@@ -38,9 +38,9 @@
     "settlementAvailable": true
   },
   "executorTestBalances": {
-    "employer": "979999993669",
-    "caller": "999999999766"
+    "employer": "979999992229",
+    "caller": "999999999684"
   },
   "pendingTransactions": [],
-  "checkedAt": "2026-10-02T16:29:00.444Z"
+  "checkedAt": "2026-10-02T16:42:58.206Z"
 }

@@ -1,0 +1,21 @@
+{
+  "version": "2",
+  "mode": "testnet",
+  "invoiceId": "presentation_invoice",
+  "paymentId": "0x866f76f690e4edf50b539cd23eba4b6c0f64b3a769c21dd0d7e67a5183212ea2",
+  "rail": "tempo",
+  "asset": "pathUSD",
+  "amount": "300000000",
+  "decimals": 6,
+  "recipient": "0xf861d698132c5DC05C684293710CB3e98D25dcFf",
+  "vault": "0xc2b4fc5f41dcc2f3924fb41ae64b604626a934b9",
+  "dueAt": "2026-10-02T15:55:03.281Z",
+  "status": "committed",
+  "transactionRef": "0x15265a409ba78d526e4abb785e37ec1c523142668d54ceaa8d15e58fb6f7eb94",
+  "commitTransactionRef": "0x15265a409ba78d526e4abb785e37ec1c523142668d54ceaa8d15e58fb6f7eb94",
+  "statement": "Actual Tempo Moderato testnet claim, using free test assets and server-controlled generated test wallets. No bank settlement or company formation is implied.",
+  "chainId": 42431,
+  "tokenAddress": "0x20c0000000000000000000000000000000000000",
+  "explorerUrl": "https://explore.testnet.tempo.xyz/tx/0x15265a409ba78d526e4abb785e37ec1c523142668d54ceaa8d15e58fb6f7eb94",
+  "checkedAt": "2026-10-02T16:40:09.734Z"
+}

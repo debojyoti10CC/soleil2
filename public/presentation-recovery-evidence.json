@@ -3,15 +3,15 @@
   "network": "Tempo Moderato",
   "chainId": 42431,
   "vault": "0xc2b4fc5f41dcc2f3924fb41ae64b604626a934b9",
-  "invoiceId": "invoice_0c9c8035-3dcb-470e-a249-f9c6431fb0a0",
-  "paymentId": "0x867ccb4127006abc7c6a562f88e48e49d901c3d1cdd105dce25df89ca98f6d02",
-  "commitHash": "0x4a34054fb1a6eb88770b40dde5dd972133c14b2b26de2bc997eb63e9eebbfa40",
-  "paymentHash": "0xe5d77f445b7934d2370cb4056cef28e75d4b02c83d38c296d086c2a6045ebc8b",
+  "invoiceId": "invoice_2b5bc2e6-6cae-4680-a64b-90fe499ca847",
+  "paymentId": "0xcc12338348280433794cad45ab55c9c2df78c66f0193bb67765cac63bb66ba78",
+  "commitHash": "0x3737b280e398a6bda918084ab6bd20c7a93205c5232299a12461c3974355c5c8",
+  "paymentHash": "0xe87ab62c623cd480999bafe0441de1789d4620786157460ba11f8c651af26007",
   "amount": "2000000",
-  "recipientBalanceBefore": "1250000",
-  "recipientBalanceAfter": "3250000",
+  "recipientBalanceBefore": "4500000",
+  "recipientBalanceAfter": "6500000",
   "lostResponseRecovered": true,
   "reloadPreservedRequestIdentity": true,
   "exactRetryDeliveredOnlyOnce": true,
-  "createdAt": "2026-10-02T16:23:05.236Z"
+  "createdAt": "2026-10-02T16:37:42.944Z"
 }
