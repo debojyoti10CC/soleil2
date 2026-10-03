@@ -72,3 +72,42 @@ input,select,textarea{background:#101010;color:#fff;border-color:#484848;border-
 
 /* Supplied Soleil identity and functional workspace disclosure. */
 .brand{gap:5px}.brand-image{display:block;width:44px;height:44px;object-fit:contain;flex:none}.brand-period{color:#d6c0df}.workspace-menu{position:relative;margin-top:32px;flex-shrink:0}.workspace-menu .workspace-switch{margin-top:0;cursor:pointer;list-style:none;min-height:78px;width:100%;user-select:none}.workspace-menu summary::-webkit-details-marker{display:none}.workspace-menu .workspace-switch:hover{background:#202020;border-color:#5b5262}.workspace-menu .workspace-switch:focus-visible{outline:3px solid #e2a9f1;outline-offset:3px}.workspace-menu[open] .workspace-switch{border-color:#746080}.workspace-menu[open] .workspace-switch>svg{transform:rotate(180deg)}.workspace-menu .workspace-switch>svg{transition:transform .15s;flex:none;color:#b8b8c1}.workspace-logo{width:32px;height:36px;border:0;background:transparent;border-radius:0}.workspace-logo img{display:block;object-fit:contain;width:32px;height:32px}.workspace-switch>div{min-width:0}.workspace-switch strong{font-size:12px;white-space:normal;overflow-wrap:anywhere;line-height:1.5;letter-spacing:-.2px}.workspace-switch span:not(.workspace-logo){font-size:11px;line-height:1.5}.workspace-dropdown{position:absolute;left:0;right:0;top:calc(100% + 8px);z-index:45;padding:8px;border:1px solid #554b5c;background:#1a1a1a;border-radius:16px;box-shadow:none}.workspace-menu:not([open]) .workspace-dropdown{display:none}.workspace-menu-label{font-size:11px;color:#b8b8c1;padding:8px 9px 12px;overflow-wrap:anywhere;line-height:1.5}.sidebar .workspace-dropdown{display:flex;gap:3px;flex-direction:column}.workspace-dropdown a,.workspace-dropdown button{display:flex;align-items:center;gap:8px;min-height:42px;padding:10px 9px;border:0;border-radius:10px;background:transparent;color:#dedee3;text-align:left;font-size:11px;font-weight:400;line-height:1.5;width:100%}.workspace-dropdown a:hover,.workspace-dropdown button:hover{background:#30283a;color:#ebc9f5}.workspace-dropdown a>svg,.workspace-dropdown button>svg{flex:none}.workspace-dropdown button{border-top:1px solid #353535;margin-top:4px;border-radius:0 0 10px 10px}.workspace-dropdown button:hover{border-radius:10px}.sidebar>.brand-link{margin-left:4px}.brand-link:focus-visible{outline:3px solid #e2a9f1;outline-offset:4px;border-radius:8px}@media(max-width:760px){.workspace-dropdown a,.workspace-dropdown button{min-height:44px;font-size:12px}}
+
+/* Keep the front page within the viewport; expanded forms remain accessible. */
+.auth-layout{height:100dvh;min-height:0;overflow:hidden}
+.auth-story{min-height:0}
+.auth-story:after{display:none}
+.auth-story-content{padding:24px 0}
+.auth-panel{min-height:0;overflow-y:auto;padding-block:24px}
+.auth-form-wrap{margin-block:auto}
+@media(max-width:760px){
+  .auth-panel{padding:20px;justify-content:flex-start;gap:0}
+  .auth-form-wrap{flex-shrink:0}
+  .auth-mobile-brand{margin-bottom:20px;flex-shrink:0}
+  .auth-subtitle{margin-bottom:18px}
+  .presentation-entry{margin-top:16px}
+  .auth-footnote{margin-top:16px;margin-bottom:0}
+}
+
+@media(max-height:740px){
+  .auth-panel{padding-block:16px}
+  .auth-mobile-brand{margin-bottom:12px}
+  .auth-panel h2{font-size:24px}
+  .auth-subtitle{margin-top:6px;margin-bottom:14px;font-size:12px}
+  .presentation-entry{margin-top:14px;padding:14px}
+  .presentation-entry>p{font-size:11px;margin-block:8px}
+  .presentation-entry .fine-print{margin-top:8px}
+  .presentation-entry .demo-buttons .button{min-height:40px}
+  .account-entry,.simulation-entry{margin-top:12px;padding-top:10px}
+  .auth-footnote{margin-top:12px;font-size:11px}
+  .auth-verifier{margin-top:10px;font-size:11px}
+}
+
+/* Preserve the supplied artwork's complete composition on the sign-in panel. */
+@media(min-width:761px){
+  .auth-story{padding:0;background:#0d0616;border-right:0}
+  .auth-story:before,.auth-story:after{display:none}
+  .auth-story-artwork{display:block;width:100%;height:100%;min-height:0}
+  .auth-story-artwork img{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
+  .auth-story-artwork:focus-visible{outline:3px solid #e2a9f1;outline-offset:-3px}
+}
